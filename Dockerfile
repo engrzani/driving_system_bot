@@ -26,7 +26,7 @@ RUN playwright install-deps chromium
 COPY browser.py config.py monitor.py notifier.py main.py config.json ./
 RUN mkdir -p screenshots
 
-# Headless must be true in cloud (no display)
+# Headless must be true in cloud (no display) — build v2
 ENV PYTHONUNBUFFERED=1
 ENV DISPLAY=""
 
