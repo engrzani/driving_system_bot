@@ -87,17 +87,31 @@ class DVSABrowser:
         """Launch the browser with anti-bot stealth settings."""
         self._pw = await async_playwright().start()
 
-        self._browser = await self._pw.chromium.launch(
-            channel="chrome",          # Use real installed Chrome, not Playwright's Chromium
+        # Use real Chrome locally (avoids Error 16), Playwright Chromium on cloud
+        import os
+        use_real_chrome = os.environ.get("DISPLAY", "local") == "local" and not os.environ.get("RENDER")
+
+        launch_kwargs = dict(
             headless=self.config.headless,
             args=[
                 "--no-sandbox",
+                "--disable-setuid-sandbox",
                 "--disable-infobars",
                 "--disable-blink-features=AutomationControlled",
                 "--disable-dev-shm-usage",
                 "--start-maximized",
             ],
         )
+        if use_real_chrome:
+            try:
+                self._browser = await self._pw.chromium.launch(channel="chrome", **launch_kwargs)
+                logger.info("Using real Chrome browser.")
+            except Exception:
+                logger.warning("Real Chrome not found — falling back to Playwright Chromium.")
+                self._browser = await self._pw.chromium.launch(**launch_kwargs)
+        else:
+            self._browser = await self._pw.chromium.launch(**launch_kwargs)
+            logger.info("Using Playwright Chromium (cloud mode).")
 
         self._context = await self._browser.new_context(
             viewport={"width": 1366, "height": 768},
