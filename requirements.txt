@@ -1,0 +1,5 @@
+playwright>=1.44.0
+python-telegram-bot>=20.7,<21.0
+twilio>=8.10.3
+python-dotenv>=1.0.0
+colorama>=0.4.6

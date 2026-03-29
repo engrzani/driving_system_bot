@@ -1,0 +1,128 @@
+New Project:
+Hi do you help in creating A Bot?
+So this is the portal u set a search for 5 centres then when u see a green that means there’s a slot but currently there is lot of bots and lot of ppl using.
+I have a booking portal to which dates become available driving test booking system o need something that will refresh the page. Instantly so I can pick up the dates like right now it’s hard like it’s very hard to pick it up
+Here is website
+https://www.gov.uk/book-pupil-driving-test
+
+Hi,
+
+Yes, this is technically feasible, but there are some important legal and practical considerations to be aware of.
+
+The booking system is managed by the Driver and Vehicle Standards Agency, which has measures in place to prevent automated access and booking. Fully automated bots that log in and book appointments may violate their terms and can lead to account restrictions or blocking.
+
+A more appropriate and reliable approach is to develop a monitoring and alert system that assists you in securing a slot while keeping final control with the user.
+
+
+---
+
+Proposed Solution Options
+
+Option 1: Basic Monitoring Bot
+
+Automatically refreshes the booking page at short intervals
+
+Detects available (green) slots instantly
+
+Highlights availability on screen
+
+Notifies user via sound or on-screen alert
+
+Manual booking remains with the user
+
+
+
+---
+
+Option 2: Enhanced Assistant Bot
+
+Faster refresh using modern browser automation tools
+
+Tracks multiple test centres simultaneously
+
+Sends instant alerts via Telegram or WhatsApp
+
+Can assist with pre-filling booking details
+
+User completes final confirmation
+
+
+
+---
+
+Option 3: Advanced Automation System
+
+High-frequency monitoring with optimized performance
+
+Multi-session tracking for different centres
+
+Proxy support to reduce blocking risk
+
+Semi-automated booking assistance
+
+Designed to compete with existing high-speed systems
+
+
+
+---
+
+Recommended Approach
+
+The most practical and compliant solution is Option 2 (Enhanced Assistant Bot). It significantly improves your chances of securing a slot while minimizing the risk of being blocked.
+He is asking for option 2
+Required Credentials & Inputs (Option 2 – Enhanced Assistant Bot)
+1. Account Access (Limited & Secure)
+To enable monitoring:
+Email / Username
+Password (optional — session/cookies preferred for better security)
+Booking Reference Number
+Driving Licence Number (if required)
+Recommended: Use session cookies instead of sharing passwords to reduce risk and improve stability.
+2. Monitoring Preferences
+Define what the system should track:
+3–5 Preferred Test Centres
+Date Range (e.g., next 2–3 months)
+Time Preference (morning / afternoon / any)
+3. Notification Setup
+For instant alerts:
+WhatsApp Number (via API)
+or
+Telegram Chat ID (recommended for speed)
+Optional:
+Email alerts (backup)
+4. Alert Behavior Configuration
+Custom alert settings:
+Instant alert when a slot is detected
+Repeated alerts while the slot is available
+Optional sound/desktop notifications
+5. Semi-Automation Details (Optional but Recommended)
+To speed up the booking process:
+Candidate Name
+Date of Birth
+Licence Details
+Pre-filled booking form data
+6. System Requirements
+Chrome / Chromium browser
+Stable internet connection
+Background running environment (local machine or VPS)
+
+How the System Works
+The system maintains a logged-in session
+Continuously monitors selected test centres
+Detects available (green) slots instantly
+Sends real-time alerts via Telegram/WhatsApp
+Optionally pre-fills booking details
+User completes the final confirmation manually
+EBay do you mean by use session cookies?
+So I want the dates like. Next week even next month whichever is?
+So soon as a date comes we have to click view on it then reserve it.
+Can the bot automatically reserve it?
+Yes, it’s definitely possible to build a bot that monitors for the earliest available dates (whether next week or next month) and instantly clicks “View” when a slot appears, but fully automatic reservation is a bit risky because the system can detect bots and may block your account or trigger captchas. A safer and more reliable approach is to use session cookies (so you don’t have to share your password), let the bot continuously monitor and instantly open or pre-fill the booking page, and then you manually confirm the reservation — this way you’re still extremely fast while avoiding most of the risks.
+Username 
+24 68 53 98 80 44
+
+Password
+q!.B7.@w*8/%F@@
+
+System should track 3/5 centres and next week week after month after etc morning afternoon any all
+So you r saying you can alert via. WhatsApp

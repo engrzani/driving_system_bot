@@ -1,0 +1,33 @@
+{
+  "test_centres": [
+    "Featherstone",
+    "High Wycombe",
+    "Tolworth",
+    "Wolverhampton",
+    "Birmingham"
+  ],
+
+  "_note_centres": "Change these to your nearest 3-5 DVSA test centres",
+
+  "date_range_days": 90,
+
+  "_note_date": "90 = scan next 3 months (next week + week after + all months)",
+
+  "time_preference": "any",
+
+  "_note_time": "Options: morning | afternoon | any",
+
+  "refresh_interval_seconds": 20,
+
+  "headless": true,
+
+  "_note_headless": "false = you can see the browser window (recommended)",
+
+  "repeat_alert_interval_seconds": 90,
+
+  "sound_alert": true,
+
+  "save_screenshots": true,
+
+  "cookies_file": "cookies.json"
+}
