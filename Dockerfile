@@ -24,7 +24,7 @@ RUN playwright install-deps chromium
 
 # Copy project files (credentials come via env vars — NOT copied)
 COPY browser.py config.py monitor.py notifier.py main.py config.json ./
-COPY screenshots/ ./screenshots/ 2>/dev/null || mkdir -p screenshots
+RUN mkdir -p screenshots
 
 # Headless must be true in cloud (no display)
 ENV PYTHONUNBUFFERED=1
